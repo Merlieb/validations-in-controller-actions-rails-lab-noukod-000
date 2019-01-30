@@ -11,7 +11,11 @@ class PostsController < ApplicationController
     @post.update(post_params)
       if @post.valid?
     redirect_to post_path(@post)
+<<<<<<< HEAD
   #  @post.save
+=======
+    @post.save
+>>>>>>> 71191312b12e267be912ecacb14993b19f4a4d38
   else
     render :edit
   end
